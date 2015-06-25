@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Change Background Color</title>
+        <script src="http://code.jquery.com/jquery-1.10.2.js"
+            type="text/javascript"></script>
+        <script src="ajax.js" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="theme.css">
+    </head>
+    <body>
+        <h1>Change Background Color</h1>
+        <div class="container">
+            <div id="desc" class="description">
+                <p>Click the Fetch button to fetch a random background color
+               from the server. Then click Set to set the background of
+               the page to the fetched color. If Set is not clicked within 15
+               seconds, the color would need to be fetched again.</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="button-collection">
+                <button id="fetch" type="button" class="button">Fetch</button>
+                <button id="set" type="button" class="button">Set</button>
+            </div>
+        </div>
+    </body>
+</html>
