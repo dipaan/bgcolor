@@ -48,7 +48,8 @@ public class QueueManager {
     }
 
     public void markUsed(String tupleId) {
-        while (reservedQueue.size() > 0) {
+        int n = reservedQueue.size();
+        while (n > 0) {
             Tuple tuple = reservedQueue.peek();
             if (tuple.getId().equals(tupleId)) {
                 reservedQueue.remove(tuple);
@@ -56,6 +57,7 @@ public class QueueManager {
                 reservedQueue.remove(tuple);
                 availableQueue.offer(tuple);
             }
+            n--;
         }
     }
 
